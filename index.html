@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <img id="loutre"src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/502.gif" height="150px">
-        <img src="https://imgs.search.brave.com/ysnJVdXhlRcO5RHyi-c-YEYTuVHFoTGyVZCSyHwpeIs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk4L0ludGVybmF0/aW9uYWxfUG9rJUMz/JUE5bW9uX2xvZ28u/c3Zn" alt="pokemon" width="">
+        <img id="loutre"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/502.gif"
+            height="150px">
+        <img src="https://imgs.search.brave.com/ysnJVdXhlRcO5RHyi-c-YEYTuVHFoTGyVZCSyHwpeIs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk4L0ludGVybmF0/aW9uYWxfUG9rJUMz/JUE5bW9uX2xvZ28u/c3Zn"
+            alt="pokemon" width="">
     </header>
     <main>
-    <section class="pokedex"></section>
+        <section class="search-container" style="text-align:center; margin: 20px;">
+            <input type="number" id="searchInput" placeholder="Entrez un ID Pokémon" />
+            <button id="searchBtn">Rechercher</button>
+        </section>
+
+        <section class="pokedex"></section>
     </main>
     <footer>
-        <button id="next-button">Suivant</button>
+        <img id="loadMoreBtn"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/512px-Pok%C3%A9_Ball_icon.svg.png"
+            alt="Charger plus de Pokémon" style="cursor: pointer; width: 100px; display: block; margin: 20px auto;">
     </footer>
-    
+
 </body>
 <script src="/script.js"></script>
+
 </html>

@@ -66,3 +66,20 @@ div img {
   .type-dark     { background-color: #705746; }
   .type-steel    { background-color: #B7B7CE; }
   .type-fairy    { background-color: #D685AD; }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loadMoreBtn.spin {
+  animation: spin 0.5s linear;
+}
+#searchInput{
+    background-color: yellow;
+    border: 5px solid blue;
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: -4px 6px 1px 1px darkblue;
+}
